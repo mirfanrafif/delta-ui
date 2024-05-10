@@ -1,0 +1,51 @@
+.container {
+  @apply space-y-1;
+}
+
+.inputAnchor {
+  @apply relative;
+}
+
+.datePlaceholder {
+  @apply px-4 flex-1 min-w-0 flex items-center text-[var(--form-description-color)] h-6;
+}
+
+.calendarPopup {
+  @apply absolute mt-2 z-[15];
+}
+
+.rightAlign {
+  @apply right-0;
+}
+
+.calendarContainer {
+  @apply rounded-lg border-none p-4 shadow-lg;
+}
+
+.calendarContainerMulti {
+  @apply rounded-lg border-none p-4;
+}
+
+.calendarTile {
+  @apply rounded-full text-center cursor-pointer mt-auto;
+}
+
+.inputLabel {
+  @apply block text-sm text-black transition mb-2;
+}
+
+.datePickerInput {
+  @apply h-6 flex flex-row items-center;
+}
+
+.topCalendar {
+  @apply bottom-[50px];
+}
+
+.insidePopupCalendar {
+  @apply right-0;
+}
+
+.icon {
+  @apply absolute h-4 top-2 right-2;
+}

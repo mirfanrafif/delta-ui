@@ -1,0 +1,30 @@
+.container {
+  @apply flex flex-col gap-[var(--text-field-gap)];
+}
+
+.anchor {
+  @apply relative;
+}
+
+.popup {
+  @apply absolute z-10 top-[calc(100%+8px)] w-full bg-white rounded-lg;
+  @apply overflow-auto;
+  @apply max-h-[400px];
+  box-shadow: var(--popup-shadow);
+}
+
+.item {
+  @apply py-2 px-4 hover:bg-gray-100 cursor-pointer text-sm;
+}
+
+.item.disabled {
+  @apply hover:bg-white cursor-default;
+}
+
+.dropdownIcon {
+  @apply absolute w-6 h-6 top-0 right-2 bottom-0 my-auto;
+}
+
+.dropdownIcon.open {
+  @apply transform rotate-180;
+}

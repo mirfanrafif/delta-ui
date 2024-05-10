@@ -1,0 +1,20 @@
+.form-label {
+  @apply text-[var(--form-label-font-size)] font-normal;
+}
+
+.label-color-default {
+  @apply text-[var(--input-label-default)];
+}
+
+.label-color-error {
+  @apply text-[var(--input-label-error)];
+}
+
+.form-description {
+  font-size: var(--form-description-font-size);
+  color: var(--form-description-color);
+}
+
+.required {
+  @apply text-[var(--required-color)];
+}

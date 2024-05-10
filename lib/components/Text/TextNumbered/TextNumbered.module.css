@@ -1,0 +1,17 @@
+.number {
+  @apply flex rounded-full font-bold h-5 w-5 items-center justify-center;
+  font-size: 8px;
+  line-height: 9.68px;
+}
+
+.number-inactive {
+  @apply text-[var(--textnumbered-inactive-text)] bg-[var(--textnumbered-inactive-bg)] border border-solid border-[var(--textnumbered-inactive-border)];
+}
+
+.number-active {
+  @apply text-[var(--textnumbered-inactive-text)] bg-[var(--textnumbered-active-bg)] border border-solid border-[var(--textnumbered-active-border)];
+}
+
+.text {
+  @apply text-xs font-normal;
+}

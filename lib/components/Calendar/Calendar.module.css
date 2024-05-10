@@ -1,0 +1,78 @@
+.date {
+  @apply flex w-full justify-center;
+}
+
+.dateButton {
+  @apply w-10 h-10 rounded-full p-2 text-sm;
+  @apply lg:w-9 lg:h-9;
+  @apply hover:outline hover:outline-[var(--calendar-date-hover-border)] hover:outline-1;
+  @apply disabled:text-[var(--calendar-date-disabled-text)];
+  @apply disabled:hover:border-none;
+}
+
+.dateButton.selected {
+  @apply !bg-[var(--calendar-date-selected-bg)] text-white;
+}
+
+.dateButton.differentMonth {
+  @apply text-[var(--calendar-date-disabled-text)];
+}
+
+.startDate {
+  @apply rounded-l-full bg-gradient-to-r from-transparent to-[var(--calendar-range-bg)] from-50% to-50%;
+}
+
+.endDate {
+  @apply rounded-r-full bg-gradient-to-l from-transparent to-[var(--calendar-range-bg)] from-50% to-50%;
+}
+
+.between {
+  @apply bg-[var(--calendar-range-bg)];
+}
+
+.today {
+  @apply text-[var(--calendar-today-text)] font-semibold;
+}
+
+.monthDay {
+  @apply rounded-lg flex flex-col bg-white z-10 w-full;
+  @apply md:w-[374px];
+}
+
+.monthNameNextPrev {
+  @apply flex gap-x-2 items-center;
+}
+
+.dateGrid {
+  @apply grid grid-cols-7 pt-3 gap-y-2;
+}
+
+.dayGrid {
+  @apply grid grid-cols-7 pt-3 mt-3;
+}
+
+.dateItem {
+  @apply text-center text-[12px] md:text-sm;
+}
+
+.prevNext {
+  @apply p-2 rounded-lg hover:bg-gray-300 drop-shadow-sm;
+}
+
+.prevIcon {
+  @apply w-4 h-4;
+}
+
+.monthGrid {
+  @apply grid grid-cols-3 gap-2 pt-3;
+}
+
+.monthYearName {
+  @apply flex-1 text-center text-sm font-semibold;
+  @apply hover:bg-gray-300 rounded-lg;
+}
+
+.monthName {
+  @apply w-full p-2 text-center text-sm;
+  @apply hover:bg-gray-300 rounded-lg;
+}

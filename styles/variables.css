@@ -1,0 +1,72 @@
+:root {
+  /* Colors */
+  --primary-50: #d8fef5;
+  --primary-100: #c8f8ec;
+  --primary-150: #baede0;
+  --primary-200: #94f2e2;
+  --primary-300: #88eecc;
+  --primary-400: #31b6b4;
+  --primary-500: #047d86;
+  --primary-600: #026273;
+  --primary-700: #024a60;
+  --primary-800: #01354d;
+
+  --neutrals-grey: #9e9fbffb;
+  --neutrals-grey-bg: #f8f9fb;
+  --neutrals-grey-disabled: #cad0ddfb;
+  --neutrals-grey-table-border: #dce2f2;
+  --neutrals-black: #2c2c2c;
+
+  --semantics-warning-bg: #fffcf5;
+  --semantics-warning-text: #5e3703;
+  --semantics-warning: #f79009;
+  --semantics-success-bg: #f6fef9;
+  --semantics-success-text: #027a48;
+  --semantics-success: #12b76a;
+  --semantics-error-bg: #fff1ed;
+  --semantics-error-text: #731811;
+  --semantics-error: #f04438;
+  --semantics-info-bg: #eff8ff;
+  --semantics-info-text: #175cd3;
+  --semantics-info: #2e90fa;
+
+  --shadow-xs: 0px 1px 2px 0px #1018280d;
+
+  /* Variables */
+  --sidebar-width: 64px;
+
+  --text-color: var(--neutrals-black);
+
+  /* Inputs */
+  --input-label-default: var(--neutrals-black);
+  --input-label-error: var(--neutrals-black);
+
+  --input-text-color: var(--neutrals-black);
+
+  --input-border-focus: var(--primary-500);
+  --input-border-default: var(--neutrals-grey-table-border);
+  --input-border-error: var(--semantics-error);
+
+  --input-bg-default: white;
+  --input-bg-error: var(--semantics-error-bg);
+
+  --form-label-font-size: 0.875rem;
+
+  --form-description-font-size: 0.75rem;
+  --form-description-color: var(--neutrals-grey);
+
+  --text-field-gap: 0.25rem;
+  --required-color: var(--semantics-error-text);
+
+  --radio-border-default: var(--neutrals-grey);
+  --radio-border-selected: var(--primary-500);
+
+  --calendar-date-hover-border: var(--primary-500);
+  --calendar-date-selected-bg: var(--primary-400);
+  --calendar-range-bg: var(--primary-100);
+  --calendar-today-text: var(--primary-300);
+  --calendar-date-disabled-text: var(--neutrals-grey-table-border);
+
+  --popup-shadow: 0px 1px 2px 0px #1018280f, 0px 1px 3px 0px #1018281a;
+  --snackbar-border-color: var(--neutrals-grey-table-border);
+}

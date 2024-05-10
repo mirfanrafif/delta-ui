@@ -1,0 +1,14 @@
+.text-input {
+  @apply rounded-lg border border-solid w-[100%]  text-sm font-normal;
+  @apply text-[var(--input-text-color)] border-[var(--input-border-default)];
+  @apply bg-[var(--input-bg-default)];
+  outline: none;
+}
+
+.text-input-error {
+  @apply border-[var(--input-border-error)] bg-[var(--input-bg-error)];
+}
+
+.text-input:focus {
+  @apply border-[var(--input-border-focus)];
+}

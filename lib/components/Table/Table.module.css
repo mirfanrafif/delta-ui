@@ -1,0 +1,21 @@
+.main-table {
+  @apply table-auto rounded-lg border-separate border-spacing-0 w-[100%];
+  @apply border border-solid border-[var(--table-border-color)] bg-[var(--table-bg-color)];
+}
+
+.table-head-tr > td {
+  @apply py-3 px-5;
+  @apply border-l border-r border-b border-solid border-[var(--table-border-color)] text-left text-xs font-normal text-[var(--table-body-text)];
+}
+
+.table-head-tr > :first-child {
+  border-left: 0 !important;
+}
+
+.table-head-tr > :last-child {
+  border-right: 0 !important;
+}
+
+.table-content {
+  height: 72vh;
+}

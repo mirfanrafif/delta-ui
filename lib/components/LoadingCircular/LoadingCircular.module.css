@@ -1,0 +1,11 @@
+.container {
+  @apply relative;
+}
+
+.loadingAnimation {
+  @apply absolute inset-0 w-full h-full p-1;
+}
+
+.loadingAnimation path {
+  @apply stroke-[var(--loading-color)];
+}

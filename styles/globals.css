@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variables.css";
+@import "./components.css";
+
+body {
+  min-height: 100vh;
+  background-color: var(--neutrals-grey-bg);
+}
+
+h1 {
+  @apply text-[24px] font-semibold;
+}
+
+h2 {
+  @apply text-[18px] font-semibold;
+}
+
+h3 {
+  @apply text-[16px] font-bold;
+}
+
+p {
+  color: var(--neutrals-black);
+}
+
+button {
+  @apply text-[16px];
+}
+
+.form-label {
+  @apply text-[14px];
+}
