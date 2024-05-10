@@ -1,5 +1,9 @@
 {
-  "name": "@delta/ui",
+  "name": "@mirfanrafif/delta-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirfanrafif/delta-ui.git"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
