@@ -1,5 +1,8 @@
 name: Publish to GitHub NPM Registry
 
+permissions: 
+  packages: write
+  
 on:
   push:
     branches:
