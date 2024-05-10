@@ -28,15 +28,17 @@ jobs:
       - name: Authenticate with GitHub NPM Registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ./.npmrc
 
-      - name: Publish to GitHub NPM Registry
-        run: npm publish --registry=https://npm.pkg.github.com/ --access=public
-        env: 
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
       - name: Archive package
         uses: actions/upload-artifact@v2
         with:
           name: package
           path: .
+
+      - name: Publish to GitHub NPM Registry
+        run: npm publish --registry=https://npm.pkg.github.com/ --access=public
+        env: 
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      
           
         
